@@ -143,7 +143,7 @@ const ThailandSouth = () => {
             지금 바로 시작하세요
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            잔차로드와 함께 태국 중부 루트를 경험해보세요.
+            잔차로드와 함께 태국 남부 루트를 경험해보세요.
           </p>
           <Button size="lg" className="font-sans">
             문의하기
