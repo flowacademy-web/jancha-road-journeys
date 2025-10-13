@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/thailand-central.jpg";
+import beachImage from "@/assets/highlights/chaam-beach.jpg";
+import villageImage from "@/assets/highlights/bangkrot-village.jpg";
+import coastImage from "@/assets/highlights/south-thailand-coast.jpg";
+import marketImage from "@/assets/highlights/hatyai-city.jpg";
 
 const ThailandCentral = () => {
   const itinerary = [
@@ -23,18 +27,22 @@ const ThailandCentral = () => {
     {
       title: "차암 해변",
       description: "해안 라이딩과 바닷바람 체험",
+      image: beachImage,
     },
     {
       title: "반그릇 마을",
       description: "현지 문화와 음식 체험",
+      image: villageImage,
     },
     {
       title: "자연 경관 탐방",
       description: "강변, 논밭, 숲길 라이딩",
+      image: coastImage,
     },
     {
       title: "현지 시장 체험",
       description: "소규모 마을 방문 및 쇼핑",
+      image: marketImage,
     },
   ];
 
@@ -77,7 +85,14 @@ const ThailandCentral = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="border-border/50">
+              <Card key={index} className="border-border/50 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-dark mb-3">
                     {highlight.title}

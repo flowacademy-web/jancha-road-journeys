@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/laos-north.jpg";
+import vangviengImage from "@/assets/highlights/vangvieng-nature.jpg";
+import luangprabangImage from "@/assets/highlights/luangprabang-temples.jpg";
+import villageImage from "@/assets/highlights/lao-village.jpg";
+import mekongImage from "@/assets/highlights/mekong-river.jpg";
 
 const LaosNorth = () => {
   const itinerary = [
@@ -23,18 +27,22 @@ const LaosNorth = () => {
     {
       title: "방비엥 주변 자연",
       description: "강, 산, 논밭 라이딩",
+      image: vangviengImage,
     },
     {
       title: "루앙프라방 역사 탐방",
       description: "사원 및 고대 도시",
+      image: luangprabangImage,
     },
     {
       title: "현지 마을 체험",
       description: "문화, 음식, 소규모 마을 방문",
+      image: villageImage,
     },
     {
       title: "강변 라이딩",
       description: "여유로운 풍경 속 라이딩 체험",
+      image: mekongImage,
     },
   ];
 
@@ -77,7 +85,14 @@ const LaosNorth = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="border-border/50">
+              <Card key={index} className="border-border/50 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-dark mb-3">
                     {highlight.title}
@@ -129,7 +144,7 @@ const LaosNorth = () => {
             지금 바로 시작하세요
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            잔차로드와 함께 라오스 북부 루트를 경험해보세요.
+            잔차로드와 함께 태국-말레이시아 국경 루트를 경험해보세요.
           </p>
           <Button size="lg" className="font-sans">
             문의하기

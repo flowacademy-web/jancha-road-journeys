@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/thailand-malaysia.jpg";
+import hatyaiImage from "@/assets/highlights/hatyai-city.jpg";
+import coastImage from "@/assets/highlights/south-thailand-coast.jpg";
+import langkawiImage from "@/assets/highlights/langkawi-island.jpg";
 
 const ThailandMalaysia = () => {
   const itinerary = [
@@ -23,18 +26,22 @@ const ThailandMalaysia = () => {
     {
       title: "핫야이 탐방",
       description: "도시 라이딩과 현지 문화 체험",
+      image: hatyaiImage,
     },
     {
       title: "국경 이동",
       description: "작은 마을과 자연 풍경 체험",
+      image: coastImage,
     },
     {
       title: "랑카위 해안",
       description: "섬 라이딩과 환상적 바다 전망",
+      image: langkawiImage,
     },
     {
       title: "현지 문화 체험",
       description: "음식, 시장, 소규모 마을 탐방",
+      image: hatyaiImage,
     },
   ];
 
@@ -77,7 +84,14 @@ const ThailandMalaysia = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="border-border/50">
+              <Card key={index} className="border-border/50 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-dark mb-3">
                     {highlight.title}
@@ -129,7 +143,7 @@ const ThailandMalaysia = () => {
             지금 바로 시작하세요
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            잔차로드와 함께 태국-말레이시아 국경 루트를 경험해보세요.
+            잔차로드와 함께 태국 남부 루트를 경험해보세요.
           </p>
           <Button size="lg" className="font-sans">
             문의하기

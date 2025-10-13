@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/thailand-south.jpg";
+import coastImage from "@/assets/highlights/south-thailand-coast.jpg";
+import villageImage from "@/assets/highlights/bangkrot-village.jpg";
+import templeImage from "@/assets/highlights/thai-temple.jpg";
 
 const ThailandSouth = () => {
   const itinerary = [
@@ -23,18 +26,22 @@ const ThailandSouth = () => {
     {
       title: "남부 해안 도로",
       description: "아름다운 해안과 자연 경관 라이딩",
+      image: coastImage,
     },
     {
       title: "수랏타니 마을",
       description: "전통 마을과 현지 문화 체험",
+      image: villageImage,
     },
     {
       title: "사원 탐방",
       description: "태국 남부의 역사적 사원 방문",
+      image: templeImage,
     },
     {
       title: "자연 경관 탐방",
       description: "강, 폭포, 숲길 라이딩",
+      image: coastImage,
     },
   ];
 
@@ -77,7 +84,14 @@ const ThailandSouth = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="border-border/50">
+              <Card key={index} className="border-border/50 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-dark mb-3">
                     {highlight.title}
@@ -129,7 +143,7 @@ const ThailandSouth = () => {
             지금 바로 시작하세요
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            잔차로드와 함께 태국 남부 루트를 경험해보세요.
+            잔차로드와 함께 태국 중부 루트를 경험해보세요.
           </p>
           <Button size="lg" className="font-sans">
             문의하기

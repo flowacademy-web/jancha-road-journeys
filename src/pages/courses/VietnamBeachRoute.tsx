@@ -6,6 +6,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/vietnam-beach-route.jpg";
+import hoianImage from "@/assets/highlights/hoian-ancient-town.jpg";
+import danangImage from "@/assets/highlights/danang-coastal-road.jpg";
+import hueImage from "@/assets/highlights/hue-imperial-city.jpg";
+import coffeeImage from "@/assets/highlights/vietnam-coffee.jpg";
 
 const VietnamBeachRoute = () => {
   const itinerary = [
@@ -45,18 +49,22 @@ const VietnamBeachRoute = () => {
     {
       title: "호이안 고대 도시",
       description: "유네스코 세계문화유산으로 지정된 아름다운 고대 도시를 자전거로 탐험합니다.",
+      image: hoianImage,
     },
     {
       title: "다낭 해안 도로",
       description: "에메랄드빛 바다를 따라 이어지는 환상적인 해안 도로 라이딩",
+      image: danangImage,
     },
     {
       title: "후에 황궁",
       description: "베트남 마지막 왕조의 수도, 역사가 살아 숨쉬는 고대 황궁 방문",
+      image: hueImage,
     },
     {
       title: "현지 커피 체험",
       description: "베트남 전통 커피 농장 방문 및 시음 체험",
+      image: coffeeImage,
     },
   ];
 
@@ -99,7 +107,14 @@ const VietnamBeachRoute = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="border-border/50">
+              <Card key={index} className="border-border/50 overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={highlight.image} 
+                    alt={highlight.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
                 <CardContent className="p-6">
                   <h3 className="font-serif text-xl font-bold text-dark mb-3">
                     {highlight.title}
