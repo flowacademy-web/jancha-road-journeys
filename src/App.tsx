@@ -7,6 +7,13 @@ import Index from "./pages/Index";
 import Vietnam from "./pages/Vietnam";
 import Thailand from "./pages/Thailand";
 import Laos from "./pages/Laos";
+import VietnamBeachRoute from "./pages/courses/VietnamBeachRoute";
+import VietnamHaGiang from "./pages/courses/VietnamHaGiang";
+import VietnamHaiVan from "./pages/courses/VietnamHaiVan";
+import ThailandCentral from "./pages/courses/ThailandCentral";
+import ThailandSouth from "./pages/courses/ThailandSouth";
+import ThailandMalaysia from "./pages/courses/ThailandMalaysia";
+import LaosNorth from "./pages/courses/LaosNorth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,8 +27,15 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/vietnam" element={<Vietnam />} />
+          <Route path="/vietnam/beach-route" element={<VietnamBeachRoute />} />
+          <Route path="/vietnam/ha-giang" element={<VietnamHaGiang />} />
+          <Route path="/vietnam/hai-van" element={<VietnamHaiVan />} />
           <Route path="/thailand" element={<Thailand />} />
+          <Route path="/thailand/central" element={<ThailandCentral />} />
+          <Route path="/thailand/south" element={<ThailandSouth />} />
+          <Route path="/thailand/malaysia" element={<ThailandMalaysia />} />
           <Route path="/laos" element={<Laos />} />
+          <Route path="/laos/north" element={<LaosNorth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

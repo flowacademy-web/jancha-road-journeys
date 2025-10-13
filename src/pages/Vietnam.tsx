@@ -1,10 +1,9 @@
 import Navbar from "@/components/Navbar";
+import DestinationCard from "@/components/DestinationCard";
 import Footer from "@/components/Footer";
-import TestimonialCard from "@/components/TestimonialCard";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Calendar, Users, Shield, ArrowRight } from "lucide-react";
-import vietnamImage from "@/assets/vietnam-bike.jpg";
+import beachRouteImage from "@/assets/vietnam-beach-route.jpg";
+import haGiangImage from "@/assets/vietnam-ha-giang.jpg";
+import haiVanImage from "@/assets/vietnam-hai-van.jpg";
 
 const Vietnam = () => {
   const highlights = [
