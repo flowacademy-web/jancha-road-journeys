@@ -1,0 +1,84 @@
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Bike } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
+
+  const navLinks = [
+    { to: "/", label: "홈" },
+    { to: "/vietnam", label: "베트남" },
+    { to: "/thailand", label: "태국" },
+    { to: "/laos", label: "라오스" },
+  ];
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-2 group">
+            <Bike className="h-6 w-6 text-primary transition-transform group-hover:scale-110" />
+            <span className="font-serif text-xl font-bold text-dark">잔차로드</span>
+            <span className="hidden sm:inline text-sm text-muted-foreground ml-1">JANCHAroad</span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(link.to) ? "text-primary" : "text-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Button size="sm" className="font-sans">
+              문의하기
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
+          >
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden py-4 border-t border-border animate-fade-up">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setIsOpen(false)}
+                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                    isActive(link.to) ? "text-primary" : "text-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Button size="sm" className="w-full font-sans">
+                문의하기
+              </Button>
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
