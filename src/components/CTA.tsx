@@ -20,15 +20,17 @@ const CTA = () => {
             <Button 
               asChild 
               size="lg" 
-              variant="secondary"
-              className="font-sans text-lg px-8 py-6"
+              className="font-sans text-lg px-8 py-6 bg-white text-primary hover:bg-white/90"
             >
-              <Link to="/blog">여행 준비 가이드 보기</Link>
+              <a href="https://open.kakao.com/o/p85EFJXh" target="_blank" rel="noopener noreferrer">
+                시작하기
+              </a>
             </Button>
             <Button 
               asChild 
               size="lg" 
-              className="font-sans text-lg px-8 py-6 bg-white text-primary hover:bg-white/90"
+              variant="secondary"
+              className="font-sans text-lg px-8 py-6"
             >
               <a href="#destinations">코스 둘러보기</a>
             </Button>
