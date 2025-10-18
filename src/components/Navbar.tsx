@@ -14,6 +14,7 @@ const Navbar = () => {
     { to: "/vietnam", label: "베트남" },
     { to: "/thailand", label: "태국" },
     { to: "/laos", label: "라오스" },
+    { to: "/blog", label: "블로그" },
   ];
 
   return (
