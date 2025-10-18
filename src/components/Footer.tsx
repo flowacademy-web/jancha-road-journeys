@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MessageCircle } from "lucide-react";
 import ContactDialog from "@/components/ContactDialog";
 import kakaoQR from "@/assets/kakao-qr.jpeg";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-footer.png";
 
 const Footer = () => {
   return (
