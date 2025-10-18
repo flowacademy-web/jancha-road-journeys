@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Bike, Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import ContactDialog from "@/components/ContactDialog";
 import kakaoQR from "@/assets/kakao-qr.jpeg";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -10,8 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <Bike className="h-6 w-6 text-primary transition-transform group-hover:scale-110" />
+            <Link to="/" className="flex items-center gap-3 mb-4 group">
+              <img src={logo} alt="잔차로드 로고" className="h-10 w-auto transition-transform group-hover:scale-110" />
               <span className="font-serif text-xl font-bold">잔차로드</span>
             </Link>
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
