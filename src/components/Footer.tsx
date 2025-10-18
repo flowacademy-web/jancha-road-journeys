@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Bike, Phone, Mail } from "lucide-react";
+import { Bike, Phone, MessageCircle } from "lucide-react";
 import ContactDialog from "@/components/ContactDialog";
+import kakaoQR from "@/assets/kakao-qr.jpeg";
 
 const Footer = () => {
   return (
@@ -47,16 +48,28 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="font-serif font-bold mb-4">연락처</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-4">
               <li className="flex items-center gap-2 text-sm">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-dark-foreground/80">02-1234-5678</span>
+                <span className="text-dark-foreground/80">010-6217-1764</span>
               </li>
               <li className="flex items-center gap-2 text-sm">
-                <Mail className="h-4 w-4 text-primary" />
-                <span className="text-dark-foreground/80">info@jancharoad.com</span>
+                <MessageCircle className="h-4 w-4 text-primary" />
+                <span className="text-dark-foreground/80">오픈 카카오톡</span>
               </li>
             </ul>
+            <a 
+              href="https://open.kakao.com/o/p85EFJXh" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-32 h-32 rounded-lg overflow-hidden border-2 border-primary/20 hover:border-primary transition-colors"
+            >
+              <img 
+                src={kakaoQR} 
+                alt="카카오톡 오픈채팅 QR 코드" 
+                className="w-full h-full object-cover"
+              />
+            </a>
           </div>
         </div>
 
