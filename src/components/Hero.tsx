@@ -36,7 +36,7 @@ const Hero = () => {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-white/90 mb-8 font-light">
-              베트남 • 태국 • 라오스 — 시니어를 위한 감성 자전거 여행 패키지
+              베트남 • 태국 • 라오스 — 감성 자전거 여행 패키지
             </p>
 
             {/* CTA Buttons */}
