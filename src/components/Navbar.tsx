@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Bike, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import ContactDialog from "@/components/ContactDialog";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <Bike className="h-6 w-6 text-primary transition-transform group-hover:scale-110" />
+            <img src={logo} alt="잔차로드 로고" className="h-8 w-8 transition-transform group-hover:scale-110" />
             <span className="font-serif text-xl font-bold text-dark">잔차로드</span>
             <span className="hidden sm:inline text-sm text-muted-foreground ml-1">JANCHAroad</span>
           </Link>
