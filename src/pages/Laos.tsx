@@ -20,7 +20,7 @@ const Laos = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-28">
       <Navbar />
       
       <section className="relative py-20 bg-gradient-to-b from-secondary to-background">

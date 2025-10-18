@@ -46,7 +46,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-28">
       <Navbar />
       
       {/* Hero Section */}
