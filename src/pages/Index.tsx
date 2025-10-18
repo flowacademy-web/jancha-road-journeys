@@ -170,7 +170,7 @@ const Index = () => {
             {/* Content */}
             <div className="animate-fade-up">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mb-6">
-                자전거 여행이란
+                김종윤 | 잔차로드 대표
               </h2>
               <div className="space-y-4 mb-8">
                 <p className="text-foreground leading-relaxed">
@@ -179,9 +179,13 @@ const Index = () => {
                   퇴직 후, 다시 길 위에서 나를 발견하게 해준 인생의 두 번째 바퀴입니다."
                 </p>
                 <p className="text-foreground leading-relaxed">
-                  "10년 동안 15개국을 자전거로 여행했고,
-                  <br />
-                  이제는 그 경험을 여러분과 나누고 싶습니다."
+                  저는 매일 왕복 60km를 자전거로 출퇴근하며 '생활 라이더'로 살아왔습니다.
+                </p>
+                <p className="text-foreground leading-relaxed">
+                  2015년 부터, 저는 홀로 동남아 7개국을 자전거로 횡단하며 지금의 잔차로드 첫 루트를 직접 개척했습니다. 길 위에서 만난 사람들, 풍경, 그리고 느림의 가치는 제게 새로운 사명감을 주었습니다.
+                </p>
+                <p className="text-foreground leading-relaxed">
+                  이제는 그 경험을 여러분과 나누고 싶습니다.
                 </p>
               </div>
 
