@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import DestinationCard from "@/components/DestinationCard";
 import TestimonialCard from "@/components/TestimonialCard";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import vietnamImage from "@/assets/vietnam-beach-route.jpg";
@@ -228,6 +229,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Section */}
+      <CTA />
 
       <Footer />
     </div>
