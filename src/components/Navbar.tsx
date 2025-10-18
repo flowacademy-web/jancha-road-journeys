@@ -21,10 +21,11 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
-          <Link to="/" className="flex items-center group">
-            <img src={logo} alt="잔차로드 로고" className="h-12 w-auto transition-transform group-hover:scale-110" />
+          <Link to="/" className="flex items-center gap-3 group">
+            <img src={logo} alt="잔차로드 로고" className="h-24 w-auto transition-transform group-hover:scale-110" />
+            <span className="font-serif text-2xl font-bold text-dark">잔차로드</span>
           </Link>
 
           {/* Desktop Navigation */}
