@@ -251,7 +251,7 @@ const RiderStories = () => {
               </h3>
               <p className="text-muted-foreground mb-6">
                 지금 이 순간, 새로운 시작을 꿈꾸고 계신가요? <br />
-                두려워 마세요. 이미 수백 명의 시니어분들이 용기를 내어 인생을 바꾸셨습니다. <br />
+                두려워 마세요. 이미 수십 명의 자전거 여행자분들이 용기를 내어 인생을 바꾸셨습니다. <br />
                 다음은 당신의 차례입니다.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
