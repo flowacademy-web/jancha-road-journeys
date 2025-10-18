@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <img src={logo} alt="잔차로드 로고" className="h-8 w-8 transition-transform group-hover:scale-110" />
+              <img src={logo} alt="잔차로드 로고" className="h-12 w-auto transition-transform group-hover:scale-110" />
               <span className="font-serif text-xl font-bold">잔차로드</span>
             </Link>
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">

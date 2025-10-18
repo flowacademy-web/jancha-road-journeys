@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={logo} alt="잔차로드 로고" className="h-8 w-8 transition-transform group-hover:scale-110" />
+            <img src={logo} alt="잔차로드 로고" className="h-12 w-auto transition-transform group-hover:scale-110" />
             <span className="font-serif text-xl font-bold text-dark">잔차로드</span>
             <span className="hidden sm:inline text-sm text-muted-foreground ml-1">JANCHAroad</span>
           </Link>
