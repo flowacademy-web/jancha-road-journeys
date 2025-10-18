@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="max-w-3xl animate-fade-up">
             {/* Main Headline */}
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-              인생의 두 번째 모험을,
+              인생의 새로운 모험을,
               <br />
               페달 위에서 시작하세요.
             </h1>
