@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
+import heroImage from "@/assets/hero-vietnam-cyclist.jpg";
 
 const Hero = () => {
   const scrollToDestinations = () => {
@@ -12,16 +13,12 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
+      {/* Background Image */}
+      <img
+        src={heroImage}
+        alt="50세 사이클리스트가 베트남 숲길을 라이딩하는 모습"
         className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/assets/videos/bike.mp4" type="video/mp4" />
-      </video>
+      />
 
       {/* Overlay Gradient */}
       <div className="absolute inset-0 hero-gradient" />
