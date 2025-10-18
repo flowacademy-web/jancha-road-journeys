@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import GalleryCarousel from "@/components/GalleryCarousel";
 import DestinationCard from "@/components/DestinationCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import CTA from "@/components/CTA";
@@ -122,6 +123,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+
+      {/* Gallery Carousel Section */}
+      <GalleryCarousel />
 
       {/* Destinations Section */}
       <section id="destinations" className="py-20 bg-background">
