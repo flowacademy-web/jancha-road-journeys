@@ -16,9 +16,11 @@ const Footer = () => {
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
               시니어를 위한 감성 자전거 여행 전문 브랜드
             </p>
-            <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
-              <Mail className="mr-2 h-4 w-4" />
-              문의하기
+            <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
+              <a href="tel:010-6217-1764">
+                <Phone className="mr-2 h-4 w-4" />
+                문의하기
+              </a>
             </Button>
           </div>
 

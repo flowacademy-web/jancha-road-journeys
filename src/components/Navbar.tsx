@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Bike } from "lucide-react";
+import { Menu, X, Bike, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -41,8 +41,11 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <Button size="sm" className="font-sans">
-              문의하기
+            <Button asChild size="sm" className="font-sans">
+              <a href="tel:010-6217-1764">
+                <Phone className="mr-2 h-4 w-4" />
+                문의하기
+              </a>
             </Button>
           </div>
 
@@ -71,8 +74,11 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button size="sm" className="w-full font-sans">
-                문의하기
+              <Button asChild size="sm" className="w-full font-sans">
+                <a href="tel:010-6217-1764">
+                  <Phone className="mr-2 h-4 w-4" />
+                  문의하기
+                </a>
               </Button>
             </div>
           </div>
