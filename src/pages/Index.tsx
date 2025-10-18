@@ -4,9 +4,9 @@ import DestinationCard from "@/components/DestinationCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import vietnamImage from "@/assets/vietnam-bike.jpg";
-import thailandImage from "@/assets/thailand-bike.jpg";
-import laosImage from "@/assets/laos-bike.jpg";
+import vietnamImage from "@/assets/vietnam-beach-route.jpg";
+import thailandImage from "@/assets/thailand-central.jpg";
+import laosImage from "@/assets/laos-north.jpg";
 import guideImage from "@/assets/guide-portrait.jpg";
 import groupImage from "@/assets/group-riders.jpg";
 
