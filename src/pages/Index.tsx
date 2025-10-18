@@ -75,7 +75,7 @@ const Index = () => {
     {
       name: "이순희",
       age: 58,
-      location: "부산 해운대구",
+      location: "서울 송파구",
       rating: 5,
       comment: "코스가 안전하고 일정이 여유로워 좋았습니다. 가이드님도 친절하시고 현지 문화를 깊이 있게 소개해주셔서 단순한 관광이 아닌 진짜 여행을 했습니다.",
       trip: "태국 코스",
@@ -83,7 +83,7 @@ const Index = () => {
     {
       name: "박철민",
       age: 62,
-      location: "인천 송도",
+      location: "서울 마포구",
       rating: 5,
       comment: "경치가 정말 아름다워요. 메콩강 일몰 라이딩은 잊을 수 없는 경험이었습니다. 다시 가고 싶습니다.",
       trip: "라오스 코스",
@@ -91,7 +91,7 @@ const Index = () => {
     {
       name: "최미경",
       age: 56,
-      location: "경기 성남시",
+      location: "서울 서초구",
       rating: 5,
       comment: "퇴직 후 첫 여행으로 선택했는데 최고의 선택이었어요. 같은 또래 분들과 함께해서 더 편안하고 즐거웠습니다.",
       trip: "베트남 코스",
@@ -99,7 +99,7 @@ const Index = () => {
     {
       name: "정상훈",
       age: 68,
-      location: "대전 유성구",
+      location: "서울 용산구",
       rating: 5,
       comment: "자전거 여행이 처음이었는데 난이도가 적당해서 무리 없이 완주할 수 있었습니다. 건강도 챙기고 추억도 쌓는 일석이조!",
       trip: "라오스 코스",
@@ -107,7 +107,7 @@ const Index = () => {
     {
       name: "황지연",
       age: 60,
-      location: "광주 서구",
+      location: "서울 종로구",
       rating: 5,
       comment: "현지 음식도 맛있고, 숙소도 깨끗하고 편안했어요. 무엇보다 천천히 여행할 수 있어서 좋았습니다.",
       trip: "태국 코스",
