@@ -58,18 +58,23 @@ const Footer = () => {
                 <span className="text-dark-foreground/80">오픈 카카오톡</span>
               </li>
             </ul>
-            <a 
-              href="https://open.kakao.com/o/p85EFJXh" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block w-32 h-32 rounded-lg overflow-hidden border-2 border-primary/20 hover:border-primary transition-colors"
-            >
-              <img 
-                src={kakaoQR} 
-                alt="카카오톡 오픈채팅 QR 코드" 
-                className="w-full h-full object-cover"
-              />
-            </a>
+            <div>
+              <a 
+                href="https://open.kakao.com/o/p85EFJXh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-32 h-32 rounded-lg overflow-hidden border-2 border-primary/20 hover:border-primary transition-colors"
+              >
+                <img 
+                  src={kakaoQR} 
+                  alt="카카오톡 오픈채팅 QR 코드" 
+                  className="w-full h-full object-cover"
+                />
+              </a>
+              <p className="text-xs text-dark-foreground/60 mt-2">
+                QR코드를 스캔하여<br />카카오톡하기
+              </p>
+            </div>
           </div>
         </div>
 
