@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Bike, Mail, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Bike, Phone, Mail } from "lucide-react";
+import ContactDialog from "@/components/ContactDialog";
 
 const Footer = () => {
   return (
@@ -16,12 +16,10 @@ const Footer = () => {
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
               시니어를 위한 감성 자전거 여행 전문 브랜드
             </p>
-            <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
-              <a href="tel:010-6217-1764">
-                <Phone className="mr-2 h-4 w-4" />
-                문의하기
-              </a>
-            </Button>
+            <ContactDialog variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
+              <Phone className="mr-2 h-4 w-4" />
+              문의하기
+            </ContactDialog>
           </div>
 
           {/* Quick Links */}
