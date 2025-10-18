@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center mb-4 group">
-              <img src={logo} alt="잔차로드 로고" className="h-8 w-auto transition-transform group-hover:scale-110" />
+              <img src={logo} alt="잔차로드 로고" className="h-24 w-auto transition-transform group-hover:scale-110" />
             </Link>
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
               시니어를 위한 감성 자전거 여행 전문 브랜드
