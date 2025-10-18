@@ -15,7 +15,7 @@ const Footer = () => {
               <img src={logo} alt="잔차로드 로고" className="h-24 w-auto transition-transform group-hover:scale-110" />
             </Link>
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
-              시니어를 위한 감성 자전거 여행 전문 브랜드
+              감성 자전거 여행 브랜드
             </p>
             <ContactDialog variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
               <Phone className="mr-2 h-4 w-4" />
