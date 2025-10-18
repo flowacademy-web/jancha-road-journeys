@@ -104,7 +104,7 @@ const RiderStories = () => {
                     <h2 className="font-serif text-2xl font-bold text-dark mb-2">
                       정미경님 (56세) – 태국 중부 루트
                     </h2>
-                    <p className="text-sm text-muted-foreground">전업주부, 2024년 10월 참가</p>
+                    <p className="text-sm text-muted-foreground">전업주부, 2024년 11월 참가</p>
                   </div>
                 </div>
 
@@ -150,7 +150,7 @@ const RiderStories = () => {
                     <h2 className="font-serif text-2xl font-bold text-dark mb-2">
                       박철민님 (62세) – 라오스 북부 루트
                     </h2>
-                    <p className="text-sm text-muted-foreground">자영업, 2024년 9월 참가</p>
+                    <p className="text-sm text-muted-foreground">자영업, 2024년 11월 참가</p>
                   </div>
                 </div>
 
