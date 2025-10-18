@@ -195,7 +195,7 @@ const Index = () => {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2" />
-                    <p className="text-sm text-foreground">2018: 유럽 5개국 자전거 횡단</p>
+                    <p className="text-sm text-foreground">2018: 동남아 7개국 자전거 횡단</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2" />
