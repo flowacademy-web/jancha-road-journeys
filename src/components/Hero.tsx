@@ -17,7 +17,8 @@ const Hero = () => {
       <img
         src={heroImage}
         alt="50세 사이클리스트가 베트남 숲길을 라이딩하는 모습"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center md:object-center"
+        style={{ objectPosition: 'center 35%' }}
       />
 
       {/* Overlay Gradient */}
