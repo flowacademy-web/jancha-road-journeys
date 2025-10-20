@@ -68,7 +68,7 @@ const Vietnam = () => {
       {/* Courses Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {courses.map((course, index) => (
               <div key={index} className="animate-fade-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <DestinationCard {...course} />
