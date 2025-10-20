@@ -6,6 +6,9 @@ import TestimonialCard from "@/components/TestimonialCard";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import vietnamImage from "@/assets/vietnam-beach-route.jpg";
 import thailandImage from "@/assets/thailand-central.jpg";
 import laosImage from "@/assets/laos-north.jpg";
@@ -112,6 +115,33 @@ const Index = () => {
       rating: 5,
       comment: "현지 음식도 맛있고, 숙소도 깨끗하고 편안했어요. 무엇보다 천천히 여행할 수 있어서 좋았습니다.",
       trip: "태국 코스",
+    },
+  ];
+
+  const blogPosts = [
+    {
+      title: "한강만 달리던 나, 이제는 해외로",
+      description: "시니어를 위한 첫 자전거 여행 가이드",
+      date: "2025년 3월 15일",
+      readTime: "8분",
+      category: "여행 가이드",
+      link: "/blog/first-overseas-guide",
+    },
+    {
+      title: "해외 자전거 여행 준비물 완벽 가이드",
+      description: "이것만 챙기면 됩니다",
+      date: "2025년 3월 10일",
+      readTime: "6분",
+      category: "준비 가이드",
+      link: "/blog/packing-guide",
+    },
+    {
+      title: "시니어에게 딱 맞는 코스 TOP3",
+      description: "베트남, 태국, 라오스 추천",
+      date: "2025년 3월 5일",
+      readTime: "10분",
+      category: "코스 추천",
+      link: "/blog/top3-courses",
     },
   ];
 
@@ -235,6 +265,67 @@ const Index = () => {
                 <TestimonialCard {...testimonial} />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="py-20 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-up">
+            <h2 className="font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
+              여행 이야기와 유용한 정보
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              잔차로드 블로그에서 자전거 여행의 모든 것을 확인하세요
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
+            {blogPosts.map((post, index) => (
+              <Card key={index} className="animate-fade-up hover:shadow-lg transition-shadow" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardHeader>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                    <span className="px-3 py-1 bg-background rounded-full text-xs font-medium">
+                      {post.category}
+                    </span>
+                  </div>
+                  <CardTitle className="font-serif text-xl mb-2 leading-tight">
+                    {post.title}
+                  </CardTitle>
+                  <CardDescription className="text-sm leading-relaxed">
+                    {post.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      <span>{post.date}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <Link to={post.link}>
+                    <Button variant="secondary" className="w-full group">
+                      읽어보기
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button asChild size="lg" variant="outline">
+              <Link to="/blog">
+                블로그 전체 보기
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
