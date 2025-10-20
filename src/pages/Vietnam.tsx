@@ -38,6 +38,8 @@ const Vietnam = () => {
         "현지 호텔 3~4성급 숙박",
         "전통 마을과 고원 탐방",
       ],
+      fullyBooked: true,
+      departureDate: "11/20",
     },
     {
       country: "베트남",
