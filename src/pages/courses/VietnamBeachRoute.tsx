@@ -9,6 +9,7 @@ import hoianImage from "@/assets/highlights/hoian-ancient-town.jpg";
 import danangImage from "@/assets/highlights/danang-coastal-road.jpg";
 import hueImage from "@/assets/highlights/hue-imperial-city.jpg";
 import coffeeImage from "@/assets/highlights/vietnam-coffee.jpg";
+import haiVanPassImage from "@/assets/hai-van-pass-road.jpg";
 
 const VietnamBeachRoute = () => {
   const itinerary = [
@@ -178,8 +179,8 @@ const VietnamBeachRoute = () => {
                         <div className="order-1 md:order-2">
                           <div className="relative h-64 md:h-full min-h-[300px] rounded-lg overflow-hidden">
                             <img 
-                              src={danangImage} 
-                              alt="다낭 해안 도로" 
+                              src={haiVanPassImage} 
+                              alt="하이반 패스 해안 도로" 
                               className="w-full h-full object-cover"
                             />
                           </div>
