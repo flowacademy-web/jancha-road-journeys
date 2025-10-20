@@ -10,8 +10,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import vietnamImage from "@/assets/vietnam-beach-route.jpg";
+import haGiangImage from "@/assets/vietnam-ha-giang.jpg";
 import thailandImage from "@/assets/thailand-central.jpg";
-import laosImage from "@/assets/laos-north.jpg";
 import guideImage from "@/assets/guide-portrait.jpg";
 import groupImage from "@/assets/group-riders.jpg";
 
@@ -34,6 +34,24 @@ const Index = () => {
       ],
     },
     {
+      country: "베트남",
+      flag: "🇻🇳",
+      title: "하장 루프",
+      description: "베트남 북부 산악 지대를 누비며 전통 마을과 숨겨진 자연 풍경을 만날 수 있는 모험 코스",
+      route: "하장 → 동반 → 메오박 → 옌민 → 하장",
+      distance: "366km",
+      difficulty: 3,
+      image: haGiangImage,
+      link: "/vietnam",
+      highlights: [
+        "9박 10일 산악 라이딩",
+        "현지 호텔 3~4성급 숙박",
+        "전통 마을과 고원 탐방",
+      ],
+      fullyBooked: true,
+      departureDate: "11/20",
+    },
+    {
       country: "태국",
       flag: "🇹🇭",
       title: "문화와 자연이 공존하는 루트",
@@ -47,22 +65,6 @@ const Index = () => {
         "현지 사찰 방문, 야시장 체험, 현지식 점심",
         "현지 가이드 동행 및 차량 서포트",
         "전 일정 보험 및 안전 장비 제공",
-      ],
-    },
-    {
-      country: "라오스",
-      flag: "🇱🇦",
-      title: "강과 산, 느린 시간이 흐르는 루트",
-      description: "메콩강을 따라 천천히 흐르는 시간 속에서 진정한 여유를 찾다",
-      route: "루앙프라방 → 꽝시폭포 → 메콩 리버사이드",
-      distance: "60km",
-      difficulty: 2,
-      image: laosImage,
-      link: "/laos",
-      highlights: [
-        "강변 리조트와 로컬 게스트하우스 숙박",
-        "메콩강 크루즈 & 일몰 라이딩 포함",
-        "시계를 잊게 되는 느린 여행의 진수",
       ],
     },
   ];
