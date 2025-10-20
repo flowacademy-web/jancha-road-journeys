@@ -10,6 +10,7 @@ import danangImage from "@/assets/highlights/danang-coastal-road.jpg";
 import hueImage from "@/assets/highlights/hue-imperial-city.jpg";
 import coffeeImage from "@/assets/highlights/vietnam-coffee.jpg";
 import haiVanPassImage from "@/assets/hai-van-pass-road.jpg";
+import haGiangLoopImage from "@/assets/ha-giang-loop.jpg";
 
 const VietnamBeachRoute = () => {
   const itinerary = [
@@ -35,8 +36,8 @@ const VietnamBeachRoute = () => {
     },
     {
       day: "5일차",
-      title: "다낭 → 후에 라이딩",
-      description: "하이반 고개 차량 이동, 후에 황궁 방문 (라이딩 30km)",
+      title: "다낭 → 후에 하장루프 라이딩",
+      description: "산악 루프 라이딩, 후에 황궁 방문 (라이딩 30km)",
     },
     {
       day: "6일차",
@@ -171,6 +172,40 @@ const VietnamBeachRoute = () => {
                             <img 
                               src={haiVanPassImage} 
                               alt="하이반 패스 해안 도로" 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+                
+                {index === 4 && (
+                  <Card className="border-primary/20 bg-primary/5 mt-6">
+                    <CardContent className="p-8">
+                      <div className="grid md:grid-cols-2 gap-8 items-center">
+                        <div className="order-2 md:order-1">
+                          <h3 className="font-serif text-2xl font-bold text-dark mb-4">
+                            세계에서 가장 장대한 산악 루프, BBC 선정 최고의 자전거 여행 코스
+                          </h3>
+                          <div className="space-y-4 text-muted-foreground leading-relaxed">
+                            <p>
+                              하이장 루프(Hà Giang Loop)는 BBC가 '자전거 여행하기 가장 좋은 루트'로 선정한 북부 베트남 대표 산악 코스입니다.
+                            </p>
+                            <p>
+                              구불구불한 고개와 협곡을 지나며, 소수 민족 마을과 계단식 논밭의 전통 풍경을 눈앞에서 체험할 수 있습니다.
+                            </p>
+                            <p>
+                              길 자체의 난이도는 중급 수준으로, 20~30분 정도의 오르막 후 펼쳐지는 구불길과 강가의 리버뷰의 절경은 라이딩의 즐거움과 여행의 감동을 동시에 선사합니다.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="order-1 md:order-2">
+                          <div className="relative h-64 md:h-full min-h-[300px] rounded-lg overflow-hidden">
+                            <img 
+                              src={haGiangLoopImage} 
+                              alt="하이장 루프 산악 도로" 
                               className="w-full h-full object-cover"
                             />
                           </div>
