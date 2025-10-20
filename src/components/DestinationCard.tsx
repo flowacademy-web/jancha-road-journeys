@@ -90,6 +90,7 @@ const DestinationCard = ({
         {fullyBooked && departureDate && (
           <div className="mb-4 p-3 bg-destructive/10 border border-destructive/30 rounded-lg">
             <p className="text-sm font-bold text-destructive mb-1">🔥 전석 마감</p>
+            <p className="text-xs text-destructive/80 mb-1">11명/11명</p>
             <p className="text-xs text-destructive/80">{departureDate} 출발 예정</p>
           </div>
         )}
