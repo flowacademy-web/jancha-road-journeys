@@ -159,7 +159,7 @@ const Index = () => {
                 src={guideImage}
                 alt="가이드 프로필"
                 className="w-full h-64 object-cover rounded-2xl shadow-lg"
-                style={{ objectPosition: '60% center' }}
+                style={{ objectPosition: '35% center' }}
               />
               <img
                 src={groupImage}
