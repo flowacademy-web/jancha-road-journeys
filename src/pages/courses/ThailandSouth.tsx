@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import CourseDetailHero from "@/components/CourseDetailHero";
 import CourseInfo from "@/components/CourseInfo";
-import RouteMap from "@/components/RouteMap";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -65,16 +64,6 @@ const ThailandSouth = () => {
         groupSize="8~12명"
         accommodation="3~4성급 호텔"
       />
-
-      {/* Route Map Section */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mb-12 text-center">
-            여정 경로
-          </h2>
-          <RouteMap days={itinerary} />
-        </div>
-      </section>
 
       {/* Highlights Section */}
       <section className="py-20 bg-background">
