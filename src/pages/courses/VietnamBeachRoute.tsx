@@ -191,7 +191,7 @@ const VietnamBeachRoute = () => {
                           </h3>
                           <div className="space-y-4 text-muted-foreground leading-relaxed">
                             <p>
-                              하이장 루프(Hà Giang Loop)는 BBC가 '자전거 여행하기 가장 좋은 루트'로 선정한 북부 베트남 대표 산악 코스입니다.
+                              하이장 루프(Hà Giang Loop)는 <span className="text-primary font-semibold">BBC</span>가 <span className="text-primary font-semibold">'자전거 여행하기 가장 좋은 루트'</span>로 선정한 <span className="text-primary font-semibold">북부 베트남 대표 산악 코스</span>입니다.
                             </p>
                             <p>
                               구불구불한 고개와 협곡을 지나며, 소수 민족 마을과 계단식 논밭의 전통 풍경을 눈앞에서 체험할 수 있습니다.
