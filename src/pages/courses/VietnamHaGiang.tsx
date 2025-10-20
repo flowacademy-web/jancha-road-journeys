@@ -148,8 +148,10 @@ const VietnamHaGiang = () => {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             잔차로드와 함께 베트남 하장 루프를 경험해보세요.
           </p>
-          <Button size="lg" className="font-sans">
-            문의하기
+          <Button asChild size="lg" className="font-sans">
+            <a href="https://naver.me/xZjo4yJ3" target="_blank" rel="noopener noreferrer">
+              문의하기
+            </a>
           </Button>
         </div>
       </section>

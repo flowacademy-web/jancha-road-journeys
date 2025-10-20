@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle } from "lucide-react";
-import ContactDialog from "@/components/ContactDialog";
+import { Button } from "@/components/ui/button";
 import kakaoQR from "@/assets/kakao-qr.jpeg";
 import logo from "@/assets/logo-footer.png";
 
@@ -17,10 +17,12 @@ const Footer = () => {
             <p className="text-dark-foreground/80 text-sm leading-relaxed mb-4">
               감성 자전거 여행 브랜드
             </p>
-            <ContactDialog variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
-              <Phone className="mr-2 h-4 w-4" />
-              문의하기
-            </ContactDialog>
+            <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-white">
+              <a href="https://naver.me/xZjo4yJ3" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 h-4 w-4" />
+                문의하기
+              </a>
+            </Button>
           </div>
 
           {/* Quick Links */}

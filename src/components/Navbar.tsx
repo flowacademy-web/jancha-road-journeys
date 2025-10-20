@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
-import ContactDialog from "@/components/ContactDialog";
+import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo-navbar.png";
 
 const Navbar = () => {
@@ -40,10 +40,12 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <ContactDialog size="sm" className="font-sans">
-              <Phone className="mr-2 h-4 w-4" />
-              문의하기
-            </ContactDialog>
+            <Button asChild size="sm" className="font-sans">
+              <a href="https://naver.me/xZjo4yJ3" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 h-4 w-4" />
+                문의하기
+              </a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,10 +73,12 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <ContactDialog size="sm" className="w-full font-sans">
-                <Phone className="mr-2 h-4 w-4" />
-                문의하기
-              </ContactDialog>
+              <Button asChild size="sm" className="w-full font-sans">
+                <a href="https://naver.me/xZjo4yJ3" target="_blank" rel="noopener noreferrer">
+                  <Phone className="mr-2 h-4 w-4" />
+                  문의하기
+                </a>
+              </Button>
             </div>
           </div>
         )}

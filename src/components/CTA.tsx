@@ -22,7 +22,7 @@ const CTA = () => {
               size="lg" 
               className="font-sans text-lg px-8 py-6 bg-white text-primary hover:bg-white/90"
             >
-              <a href="https://open.kakao.com/o/p85EFJXh" target="_blank" rel="noopener noreferrer">
+              <a href="https://naver.me/xZjo4yJ3" target="_blank" rel="noopener noreferrer">
                 시작하기
               </a>
             </Button>
