@@ -3,7 +3,6 @@ import DestinationCard from "@/components/DestinationCard";
 import Footer from "@/components/Footer";
 import beachRouteImage from "@/assets/vietnam-beach-route.jpg";
 import haGiangImage from "@/assets/vietnam-ha-giang.jpg";
-import haiVanImage from "@/assets/vietnam-hai-van.jpg";
 
 const Vietnam = () => {
   const courses = [
@@ -40,22 +39,6 @@ const Vietnam = () => {
       ],
       fullyBooked: true,
       departureDate: "11/20",
-    },
-    {
-      country: "베트남",
-      flag: "🇻🇳",
-      title: "하이반 패스",
-      description: "해안과 산을 연결하는 경치 좋은 코스로, 바닷바람과 산길을 함께 느낄 수 있는 감성 라이딩 코스입니다.",
-      route: "호이안 → 다낭 → 후에 → 동하",
-      distance: "200km",
-      difficulty: 2,
-      image: haiVanImage,
-      link: "/vietnam/hai-van",
-      highlights: [
-        "8박 10일 해안&산악 루트",
-        "3~4성급 호텔 숙박",
-        "세계문화유산 도시 탐방",
-      ],
     },
   ];
 
