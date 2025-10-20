@@ -17,7 +17,7 @@ const Vietnam = () => {
       image: beachRouteImage,
       link: "/vietnam/beach-route",
       highlights: [
-        "6일간의 여유로운 일정",
+        "8박 10일 여유로운 일정",
         "부티크 호텔 4성급 이상 숙박",
         "8~12명 소규모 그룹",
       ],
