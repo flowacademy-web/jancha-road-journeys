@@ -163,11 +163,11 @@ const Index = () => {
       <section id="destinations" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-up">
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-              당신의 속도에 맞는 길을 선택하세요
-            </h2>
+            <h1 className="font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
+              해외 자전거여행, 당신의 속도에 맞춰 떠나세요
+            </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              잔차로드는 세 나라의 매력을 자전거로 가장 느리게, 가장 깊게 경험할 수 있는 루트를 준비했습니다.
+              잔차로드는 베트남, 태국, 라오스의 매력을 자전거로 가장 느리게, 가장 깊게 경험할 수 있는 해외 자전거여행 루트를 준비했습니다.
             </p>
           </div>
 
@@ -189,13 +189,13 @@ const Index = () => {
             <div className="grid grid-cols-2 gap-4">
               <img
                 src={guideImage}
-                alt="가이드 프로필"
+                alt="해외 자전거여행 전문 가이드 김종윤 대표"
                 className="w-full h-64 object-cover rounded-2xl shadow-lg"
                 style={{ objectPosition: '35% center' }}
               />
               <img
                 src={groupImage}
-                alt="함께한 사람들"
+                alt="잔차로드 해외 자전거여행 단체 라이딩"
                 className="w-full h-64 object-cover rounded-2xl shadow-lg mt-8"
               />
             </div>
@@ -276,10 +276,10 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 animate-fade-up">
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-dark mb-4">
-              여행 이야기와 유용한 정보
+              자전거여행 이야기와 유용한 정보
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              잔차로드 블로그에서 자전거 여행의 모든 것을 확인하세요
+              잔차로드 블로그에서 해외 자전거여행의 모든 것을 확인하세요
             </p>
           </div>
 
