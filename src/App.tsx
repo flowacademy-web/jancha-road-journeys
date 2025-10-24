@@ -16,8 +16,11 @@ import ThailandSouth from "./pages/courses/ThailandSouth";
 import ThailandMalaysia from "./pages/courses/ThailandMalaysia";
 import LaosNorth from "./pages/courses/LaosNorth";
 import Blog from "./pages/Blog";
+import SafetyGuide from "./pages/blog/SafetyGuide";
 import FirstOverseasGuide from "./pages/blog/FirstOverseasGuide";
+import HealthBenefits from "./pages/blog/HealthBenefits";
 import PackingGuide from "./pages/blog/PackingGuide";
+import BudgetGuide from "./pages/blog/BudgetGuide";
 import Top3Courses from "./pages/blog/Top3Courses";
 import RiderStories from "./pages/blog/RiderStories";
 import NotFound from "./pages/NotFound";
@@ -44,8 +47,11 @@ const App = () => (
           <Route path="/laos" element={<Laos />} />
           <Route path="/laos/north" element={<LaosNorth />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/safety-guide" element={<SafetyGuide />} />
           <Route path="/blog/first-overseas-guide" element={<FirstOverseasGuide />} />
+          <Route path="/blog/health-benefits" element={<HealthBenefits />} />
           <Route path="/blog/packing-guide" element={<PackingGuide />} />
+          <Route path="/blog/budget-guide" element={<BudgetGuide />} />
           <Route path="/blog/top3-courses" element={<Top3Courses />} />
           <Route path="/blog/rider-stories" element={<RiderStories />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
